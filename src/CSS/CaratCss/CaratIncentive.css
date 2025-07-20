@@ -1,0 +1,105 @@
+.container_details {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo_logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.logo_logo img {
+  height: 150px;
+}
+
+.back_class {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.back_icon {
+  font-size: 28px;
+  cursor: pointer;
+  margin-right: 10px;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.back_icon:hover {
+  color: #bb9060;
+}
+
+.back_class h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #444;
+}
+
+.input_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.input_group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input_group label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.input_group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+  .input_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .back_class {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .back_class h2 {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+
+  .logo_logo img {
+    height: 100px;
+  }
+
+  .container_details {
+    padding: 15px 10px;
+    margin: 10px;
+  }
+
+  .input_group label {
+    font-size: 13px;
+  }
+
+  .input_group input {
+    font-size: 12.5px;
+    padding: 8px;
+  }
+}

@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.CaratIncentive {
+  width: 100%;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.CaratIncentive form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.CaratIncentive img {
+  width: 140px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.BackIconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  gap: 10px;
+}
+
+.LeftIcon .icon {
+    padding-top: 5px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #333;
+}
+
+.LeftIcon .icon:hover {
+  color: #bb9060;
+  transition: .2s;
+}
+
+.RightText h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #222;
+}
+
+form hr {
+  width: 80px;
+  border: 2px solid #aaa;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+form label {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 5px;
+  align-self: flex-start;
+}
+
+form input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+.Buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 25px;
+  gap: 15px;
+}
+
+.Buttons button {
+    width: 200px;
+  flex: 1;
+  height: 40px;
+  background-color: #d3d2d2;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.Buttons button:hover {
+  background-color: #bb9060;
+  color: #fff;
+}
+
+@media (max-width: 480px) {
+  .RightText h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .LeftIcon .icon {
+    font-size: 20px;
+    padding-top: 0px;
+  }
+  .LeftIcon .icon:hover {
+  color: #bb9060;
+  transition: .2s;
+}
+
+  .CaratIncentive {
+    padding: 20px 15px;
+    margin: 20px auto;
+  }
+
+  .Buttons {
+    flex-direction: row;     
+    gap: 10px;               
+  }
+
+  .Buttons button {
+    width: 120px;             
+  }
+}
