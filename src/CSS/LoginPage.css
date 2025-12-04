@@ -73,7 +73,7 @@
 .Close {
   position: absolute;
   right: 10px;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
   cursor: pointer;
   color: #777;
